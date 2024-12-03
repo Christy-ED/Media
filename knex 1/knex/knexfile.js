@@ -9,11 +9,13 @@ module.exports = {
       password: process.env.DB_PASSWORD,
       database: process.env.DB_NAME,
     },
+    //MIGARTION is where you write your sql query(ex: drop table, create table)
     migrations: {
-      directory: "./migrations", 
+      directory: "./migrations",
     },
+    // fake data to make sure it your database is not empty
     seeds: {
-      directory: "./db/seeds", 
+      directory: "./db/seeds",
     },
   },
 };
